@@ -1,63 +1,36 @@
-import React from "react";
+import * as React from "react";
 
-export const Box = () => {
+function MyComponent(props) {
   return (
-    <div className="w-[1152px] h-[768px]">
-      <div className="fixed w-[1152px] h-[768px] top-0 left-0 bg-black">
-        <div className="relative w-[859px] h-[330px] top-[219px] left-[149px]">
-          <div className="absolute top-0 left-[324px] [font-family:'Inter-Bold',Helvetica] font-bold text-white text-[16px] tracking-[0] leading-[normal] whitespace-nowrap">
-            Supported and backed by:
-          </div>
-          <div className="absolute w-[869px] h-[166px] top-[54px] left-0">
-            <div className="relative w-[853px] h-[166px]">
-              <div className="absolute w-[853px] h-[166px] top-0 left-0">
-                <div className="top-0 left-0 absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-[92px] left-0 absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-0 left-[218px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-[92px] left-[218px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-0 left-[436px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-[92px] left-[436px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-0 left-[654px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-                <div className="top-[92px] left-[654px] absolute w-[199px] h-[74px] bg-[#d9d9d9]" />
-              </div>
-              <div className="top-[18px] left-[50px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Lorem
-              </div>
-              <div className="top-[110px] left-[57px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Dolor
-              </div>
-              <div className="top-[18px] left-[274px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Ipsum
-              </div>
-              <div className="top-[110px] left-[296px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Sit
-              </div>
-              <div className="top-[18px] left-[493px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Dolor
-              </div>
-              <div className="top-[110px] left-[486px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Lorem
-              </div>
-              <div className="top-[18px] left-[732px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Sit
-              </div>
-              <div className="top-[110px] left-[705px] absolute [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] tracking-[0] leading-[normal]">
-                Ipsum
-              </div>
-            </div>
-          </div>
-          <div className="absolute w-[513px] h-[75px] top-[255px] left-[170px]">
-            <div className="absolute top-0 left-[59px] [font-family:'Inter-Bold',Helvetica] font-bold text-white text-[32px] tracking-[0] leading-[normal]">
-              Less code. More product.
-            </div>
-            <p className="absolute w-[513px] top-[37px] left-0 [font-family:'Inter-Regular',Helvetica] font-normal text-transparent text-[16px] text-center tracking-[0] leading-[normal]">
-              <span className="text-white">By using our UI Kit, we make sure you only get to </span>
-              <span className="[font-family:'Inter-Bold',Helvetica] font-bold text-[#ffff00]">focus more</span>
-              <span className="text-white"> on the other things that matter.</span>
-            </p>
-          </div>
+    <div className="flex flex-col items-center px-16 py-12 text-xl font-light text-center whitespace-nowrap bg-black text-neutral-500 max-md:px-5">
+      <div className="self-start mt-9 text-4xl font-bold text-white max-md:max-w-full">
+        Contact
+      </div>
+      <div className="mt-9 text-base font-bold text-white">
+        Fill out this form to reach us.
+      </div>
+      <div className="flex gap-3 mt-6 max-w-full w-[599px] max-md:flex-wrap">
+        <div className="grow justify-center items-start py-4 pr-16 pl-4 bg-zinc-300 max-md:pr-5">
+          First name
         </div>
+        <div className="grow justify-center items-start py-4 pr-16 pl-3.5 bg-zinc-300 max-md:pr-5">
+          Last name
+        </div>
+      </div>
+      <div className="justify-center items-start py-4 pr-16 pl-4 mt-9 max-w-full bg-zinc-300 w-[604px] max-md:pr-5">
+        Email
+      </div>
+      <div className="justify-center items-start py-3.5 pr-16 pl-4 mt-9 max-w-full bg-zinc-300 w-[604px] max-md:pr-5">
+        Phone (optional)
+      </div>
+      <div className="items-start pt-4 pr-16 pb-24 pl-4 mt-9 max-w-full bg-zinc-300 w-[604px] max-md:pr-5 max-md:pb-10">
+        Message
+      </div>
+      <div className="justify-center items-center px-16 py-4 mt-4 max-w-full text-2xl font-bold bg-blue-300 text-slate-900 w-[250px] max-md:px-5">
+        Send
       </div>
     </div>
   );
-};
+}
+
+
