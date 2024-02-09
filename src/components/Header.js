@@ -23,7 +23,7 @@ const Header = () => {
                             </a>
                         </div>
                         <div className='hidden lg:flex'>
-                            <ul className='flex justify-between gap-[20px] items-center font-extralight text-white text-[16px] tracking-[0] leading-[normal]'>
+                            <ul className='flex justify-between gap-[20px] items-center font-extralight text-white text-[16px]'>
                                 <li className='hover:text-gray-400 font-bold'>
                                     <a href='#heroSection'>
                                         Home
@@ -65,7 +65,7 @@ const Header = () => {
                     <div className='h-full pb-[3rem]'>
                         { menuToggle &&
                         <div>
-                            <ul className='flex flex-col justify-between gap-[30px] items-start font-extralight text-white text-[16px] tracking-[0] leading-[normal]'>
+                            <ul className='flex flex-col justify-between gap-[30px] items-start font-extralight text-white text-[20px]'>
                                 <li onClick={() => setMenuToggle(false)} className='hover:text-gray-400 '>
                                     <a href='#heroSection'>
                                         Home
