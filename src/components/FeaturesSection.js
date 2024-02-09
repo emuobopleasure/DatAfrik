@@ -3,7 +3,7 @@ import React from 'react'
 const FeaturesSection = () => {
     return (
         <section>
-            <div>
+            <div className='max-w-[90rem] mx-auto'>
                 <div className='px-[1rem] lg:px-[8rem] my-[15rem] text-center lg:w-[1152px] mx-auto'>
                     <div>
                         <h6 className='font-bold text-[12px] lg:text-[16px] tracking-[0] leading-[normal] mb-[30px]'>

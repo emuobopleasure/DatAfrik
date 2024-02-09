@@ -11,7 +11,7 @@ const AboutSection = () => {
                         </h2>
                     </div>
                     <div>
-                        <p className='mt-14 text-[12px] lg:text-base'>
+                        <p className='mt-14 text-[16px] lg:text-base'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet
                             consectetur adipiscing elit pellentesque habitant. Cras pulvinar mattis

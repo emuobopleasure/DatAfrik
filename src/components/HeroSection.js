@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 
 const HeroSection = () => {
     return (
-        <section id='section'>
+        <section id='heroSection'>
             <div className='max-w-[90rem] mx-auto'>
                 <div className='px-[1rem] lg:px-[4rem] text-center lg:w-[770px] mx-auto'>
                     <div>

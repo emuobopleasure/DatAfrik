@@ -16,7 +16,7 @@ const Header = () => {
                 <nav className='px-[1rem] lg:px-[4rem]'>
                     <div className='py-[1rem] flex justify-between items-center'>
                         <div>
-                            <a href=''>
+                            <a href='#heroSection'>
                                 <button className='font-bold text-[20px] hover:text-gray-400'>
                                     JustAnotherUIKit
                                 </button>
@@ -25,7 +25,7 @@ const Header = () => {
                         <div className='hidden lg:flex'>
                             <ul className='flex justify-between gap-[20px] items-center font-extralight text-white text-[16px] tracking-[0] leading-[normal]'>
                                 <li className='hover:text-gray-400 font-bold'>
-                                    <a href='/'>
+                                    <a href='#heroSection'>
                                         Home
                                     </a>
                                 </li >
@@ -50,38 +50,39 @@ const Header = () => {
                             {
                                 !menuToggle &&
                                 <button onClick={() => setMenuToggle(true)}>
-                                    <CiMenuFries />
+                                    <CiMenuFries className='text-[1.5rem]' />
                                 </button>
                             }
                             {
                                 menuToggle &&
                                 <button onClick={() => setMenuToggle(false)}>
-                                    <TfiClose />
+                                    <TfiClose className='text-[1.5rem]' />
                                 </button>
                             }
                         </div>
                     </div>
-                    <div className='h-full'>
+                    {/* mobile nav */}
+                    <div className='h-full pb-[3rem]'>
                         { menuToggle &&
                         <div>
-                            <ul className='flex flex-col justify-between gap-[20px]'>
-                                <li>
-                                    <a href='/'>
+                            <ul className='flex flex-col justify-between gap-[30px] items-start font-extralight text-white text-[16px] tracking-[0] leading-[normal]'>
+                                <li onClick={() => setMenuToggle(false)} className='hover:text-gray-400 '>
+                                    <a href='#heroSection'>
                                         Home
                                     </a>
-                                </li>
-                                <li>
-                                    <a href='/about'>
+                                </li >
+                                <li onClick={() => setMenuToggle(false)} className='hover:text-gray-400'>
+                                    <a href='#aboutSection'>
                                         About
                                     </a>
-                                </li>
-                                <li>
-                                    <a href='/contact'>
+                                </li >
+                                <li onClick={() => setMenuToggle(false)} className='hover:text-gray-400'>
+                                    <a href='#contactSection'>
                                         Contact
                                     </a>
                                 </li>
-                                <li>
-                                    <a href='/blog'>
+                                <li onClick={() => setMenuToggle(false)} className='hover:text-gray-400'>
+                                    <a href='/#blog'>
                                         Blog
                                     </a>
                                 </li>
